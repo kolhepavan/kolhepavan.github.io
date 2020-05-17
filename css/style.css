@@ -210,12 +210,14 @@ span.m-left{
     margin-top: 50px;
 }
 
+/*
 .about img{
+    width: 100%;
     max-width: 450px;
-/*    height: 300px;*/
     position: relative;
     z-index: -1;
 }
+*/
 
 @media (min-width: 1020px){
     .about img{
