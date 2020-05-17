@@ -17,12 +17,31 @@ html{
     padding: 0 100px 0 100px;
 }
 
+body{
+    /* width: 100vw; */
+    margin: 0;
+    padding: 0;
+    background-image: url(..//img/BG.png);
+    z-index: -1;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.navbar{
+    background-color: #181818;
+}
+
 
 header h1{
     padding-left: 20px;
     color:#6f6c68; 
     text-transform: uppercase;
-    font-weight: 600px;
+    font-weight: 600;
 }
 
 
@@ -38,32 +57,25 @@ nav a:hover{
 }
 
 nav ul,
-.work-category{
-    padding-left: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
+    .work-category{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+    }
+
+@media (min-width: 1020px){
+    nav ul,
+    .work-category{
+        padding-left: 1200px;
+    }
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    background-image: url(..//img/BG.png);
-    z-index: -1;
+@media (min-width: 768px) and (max-width: 1024px){
+    nav ul,
+    .work-category{
+        padding-left: 300px;
+    }
 }
-
-header{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px 0;
-}
-
-
-.navbar{
-    background-color: #181818;
-}
-
 
 li{
     list-style: none;
@@ -171,7 +183,6 @@ span.m-left{
     color: black;
     z-index: 0;
     opacity: .3;
-
 }
 
 /*                                                             About info Box*/
@@ -203,14 +214,41 @@ span.m-left{
     width: 450px;
     height: 300px;
     position: relative;
-    top: -280px;
-    left: 1010px;
-    
+}
+
+@media (min-width: 1020px){
+    .about img{
+        top: -280px;
+        left: 1010px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .about img{
+        float: right;
+        
+    }
 }
 
 .skills{
-    margin-top: -300px;
     height: 110vh;
+}
+
+@media (min-width: 1020px){
+    .skills{
+        margin-top: -300px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .skills{
+        margin-top: -200px;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px){
+    .skills{
+        margin-top: -100px;
+    }
 }
 
 .skills h1,
@@ -243,14 +281,27 @@ span.m-left{
     margin-bottom: 40px;
 }
 
-div[class^='tag-']{
-    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
-    width: 180px;
-    height: 40px;
-    background-color: #ed5565;
-    margin-right: 30px;
-}
 
+
+
+@media (min-width: 768px){
+    div[class^='tag-']{
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
+        width: 180px;
+        height: 40px;
+        background-color: #ed5565;
+        margin-right: 30px;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px){
+    div[class^='tag-']{
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
+        width: 100px;
+        height: 70px;
+        background-color: #ed5565;
+        margin-right: 30px;
+    }
+}
 
 div[class^='tag-'] p{
     color: #fff;
@@ -260,13 +311,25 @@ div[class^='tag-'] p{
     padding-top: 7px;
 }
 
-.progressbar{
-    position: relative;
-    width: 600px;
-    height: 20px;
-    border: 2px solid #fff;
-    border-radius: 20px;
-    margin-top: 7px;
+@media (min-width: 768px){
+    .progressbar{
+        position: relative;
+        width: 600px;
+        height: 20px;
+        border: 2px solid #fff;
+        border-radius: 20px;
+        margin-top: 7px;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px){
+    .progressbar{
+        position: relative;
+        width: 50vw;
+        height: 20px;
+        border: 2px solid #fff;
+        border-radius: 20px;
+        margin-top: 25px;
+    }
 }
 
 div[class^='bar-']{
