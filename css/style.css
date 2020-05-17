@@ -211,9 +211,10 @@ span.m-left{
 }
 
 .about img{
-    width: 450px;
-    height: 300px;
+    max-width: 450px;
+/*    height: 300px;*/
     position: relative;
+    z-index: -1;
 }
 
 @media (min-width: 1020px){
@@ -251,7 +252,15 @@ span.m-left{
     }
 }
 
-.skills h1,
+.skills h1{
+    text-align: right;
+    color: black;
+    font-size: 6rem;
+    opacity: .3;
+    margin-bottom: 60px;
+}
+
+
 .contact h1{
     text-align: left;
     color: black;
@@ -347,33 +356,6 @@ div[class^='bar-']{
 .bar-3DArt{
     width: calc(0 - 6px);
 }
-
-
-/*
-form input,
-form textarea{
-    display: block;
-    width: 500px;
-    padding: 20px;
-    background-color: #252627;
-    border: 3px solid #707070;
-    margin: 20px;
-    outline: none;
-    font-size: 1.2rem;
-    color: #fff;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    transform: translateX(-50%);
-}
-
-.form input:last-child{
-    width: 150px;
-    background-color: #ed5565;
-    border: none;
-    cursor: pointer;
-}
-*/
 
 .portfolio{
     margin-top: 200px;
